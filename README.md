@@ -12,7 +12,7 @@ An interactive web-based IDE for exploring a Code Property Graph (CPG).
 
 ## Setup
 
-1. Download `cpg.db` from the latest Release. Place it in the project root.
+1. Download [`cpg.db`](https://github.com/the-kazansky/theartisan.ai/releases/download/db/cpg.db) from the latest Release. Place it in the project root.
 
 2. Run:
    `docker compose up`
