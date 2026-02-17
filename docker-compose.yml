@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./app/backend
+    container_name: cpg-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./cpg.db:/data/cpg.db
+    environment:
+      - DB_PATH=/data/cpg.db
+
+  frontend:
+    build: ./app/frontend
+    container_name: cpg-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
